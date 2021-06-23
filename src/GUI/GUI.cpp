@@ -5,10 +5,10 @@ Gui::Gui(string path) {
   string json = file.load(path);
   Tree tree;
   tree.createTree(json);
-  Cart cart;
+  Bot bot;
   this->tree = tree;
   this->file = file;
-  this->cart = cart;
+  this->bot = bot;
   this->path = path;
 }
 
@@ -43,7 +43,8 @@ void Gui::init() {
 void Gui::executeOption(int option) {
   switch(option) {
     case 1:
-
+      this->initBot();
+      cout << "\n";
       break;
     case 2:
       this->addNode();
@@ -85,6 +86,10 @@ void Gui::executeOption(int option) {
       cout << "La opcion indicada no esta disponible, por favor intentelo nuevamente" << "\n\n";
       break;
   }
+}
+
+void Gui::initBot() {
+  this->bot.init();
 }
 
 void Gui::addNode() {

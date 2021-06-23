@@ -5,7 +5,7 @@ Gui::Gui(string path) {
   string json = file.load(path);
   Tree tree;
   tree.createTree(json);
-  Bot bot;
+  Bot bot(tree);
   this->tree = tree;
   this->file = file;
   this->bot = bot;

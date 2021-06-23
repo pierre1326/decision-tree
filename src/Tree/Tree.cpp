@@ -2,6 +2,10 @@
 
 Tree::Tree() {}
 
+TreeNode * Tree::getRoot() {
+  return root;
+}
+
 void Tree::printTree() {
   string result = this->printTreeAux(this->root, 2);
   cout << result << "\n";

@@ -1,159 +1,160 @@
 {
-  "label": "Hola, espero se encuentre bien. Por favor indique la opcion que desea realizar.",
-  "product": "",
-  "value": -1,
   "childs": [
     {
-      "label": "Con cuanto detalle desea imprimir la factura",
-      "product": "Imprimir factura",
-      "value": -2,
       "childs": [
         {
+          "childs": [],
           "label": "",
           "product": "Unicamente total",
-          "value": -6,
-          "childs": []
+          "value": -6
         },
         {
+          "childs": [],
           "label": "",
           "product": "Con desglose",
-          "value": -7,
-          "childs": []
+          "value": -7
         }
-      ]
+      ],
+      "label": "Con cuanto detalle desea imprimir la factura",
+      "product": "Imprimir factura",
+      "value": -2
     },
     {
-      "label": "",
-      "product": "Agregar producto",
-      "value": -3,
       "childs": [
         {
+          "childs": [],
           "label": "Que hamburguesa desea?",
           "product": "Hamburguesa",
-          "value": 2000,
-          "childs": []
+          "value": 2000
         },
         {
-          "label": "Que pizza desea?",
-          "product": "Pizza",
-          "value": 2000,
           "childs": [
             {
+              "childs": [],
               "label": "Que opcion desea?",
               "product": "Vegetariana",
-              "value": 2000,
-              "childs": []
+              "value": 2000
             },
             {
+              "childs": [],
               "label": "Que opcion desea?",
               "product": "Suprema",
-              "value": 3000,
-              "childs": []
+              "value": 3000
             }
-          ]
+          ],
+          "label": "Que pizza desea?",
+          "product": "Pizza",
+          "value": 2000
         },
         {
-          "label": "Que tipo de pan desea?",
-          "product": "Sandwich",
-          "value": 2000,
           "childs": [
             {
+              "childs": [],
               "label": "Que opcion desea?",
               "product": "Integral",
-              "value": 2000,
-              "childs": []
+              "value": 2000
             },
             {
-              "label": "Que tipo de queso quiere colocar",
-              "product": "Especias",
-              "value": 2000,
               "childs": [
                 {
+                  "childs": [],
                   "label": "Que opcion desea?",
                   "product": "Mozzarella",
-                  "value": 2000,
-                  "childs": []
+                  "value": 2000
                 },
                 {
-                  "label": "Indique la salsa que quiere",
-                  "product": "Americano",
-                  "value": 2000,
                   "childs": [
                     {
+                      "childs": [],
                       "label": "Que opcion desea?",
                       "product": "Mayonesa",
-                      "value": 2000,
-                      "childs": []
+                      "value": 2000
                     },
                     {
-                      "label": "Como quiere el pan?",
-                      "product": "Mostaza",
-                      "value": 2000,
                       "childs": [
                         {
+                          "childs": [],
                           "label": "Que opcion desea?",
                           "product": "Caliente",
-                          "value": 2000,
-                          "childs": []
+                          "value": 2000
                         },
                         {
+                          "childs": [],
                           "label": "Que opcion desea?",
                           "product": "Tostado",
-                          "value": 2000,
-                          "childs": []
+                          "value": 2000
                         }
-                      ]
+                      ],
+                      "label": "Como quiere el pan?",
+                      "product": "Mostaza",
+                      "value": 2000
                     }
-                  ]
+                  ],
+                  "label": "Indique la salsa que quiere",
+                  "product": "Americano",
+                  "value": 2000
                 }
-              ]
+              ],
+              "label": "Que tipo de queso quiere colocar",
+              "product": "Especias",
+              "value": 2000
             }
-          ]
+          ],
+          "label": "Que tipo de pan desea?",
+          "product": "Sandwich",
+          "value": 2000
         }
-      ]
-    },
-    { "label": "Cual opcion desea seleccionar",
-      "product": "Eliminar producto de la factura",
-      "value": -4,
-      "childs": [
-        {
-          "label": "",
-          "product": "Limpiar carrito",
-          "value": -8,
-          "childs": []
-        },
-        {
-          "label": "",
-          "product": "Eliminar un solo producto",
-          "value": -9,
-          "childs": []
-        }
-      ]
+      ],
+      "label": "Cual producto desea agregar?",
+      "product": "Agregar producto",
+      "value": -3
     },
     {
-      "label": "Cual descuento desea aplicar",
-      "product": "Aplicar descuento",
-      "value": -5,
       "childs": [
         {
+          "childs": [],
           "label": "",
-          "product" : "Descuento de 10%",
-          "value": -10,
-          "childs": []
+          "product": "Limpiar carrito",
+          "value": -8
         },
         {
+          "childs": [],
           "label": "",
-          "product" : "Descuento de 25%",
-          "value": -11,
-          "childs": []
-        },
-        {
-          "label": "",
-          "product" : "Descuento de 50%",
-          "value": -12,
-          "childs": []
+          "product": "Eliminar un solo producto",
+          "value": -9
         }
-      ]
+      ],
+      "label": "Cual opcion desea seleccionar",
+      "product": "Eliminar producto de la factura",
+      "value": -4
+    },
+    {
+      "childs": [
+        {
+          "childs": [],
+          "label": "",
+          "product": "Descuento de 10%",
+          "value": -10
+        },
+        {
+          "childs": [],
+          "label": "",
+          "product": "Descuento de 25%",
+          "value": -11
+        },
+        {
+          "childs": [],
+          "label": "",
+          "product": "Descuento de 50%",
+          "value": -12
+        }
+      ],
+      "label": "Cual descuento desea aplicar",
+      "product": "Aplicar descuento",
+      "value": -5
     }
-  ]
+  ],
+  "label": "Hola, espero se encuentre bien. Por favor indique la opcion que desea realizar.",
+  "product": "",
+  "value": -1
 }

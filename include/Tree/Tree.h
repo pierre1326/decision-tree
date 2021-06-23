@@ -38,11 +38,12 @@ class Tree {
     void preorderTransversal();
     void orderTransversal();
     void printTree();
+    TreeNode * getRoot();
 
   private:
     TreeNode *root;
     int actualID = 0;
-    
+
     TreeNode * createNodeFromJson(json json);
     TreeNode * iterateChilds(json json);
     json convertNode(TreeNode * node);

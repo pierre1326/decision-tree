@@ -6,13 +6,13 @@
           "childs": [],
           "label": "",
           "product": "Unicamente total",
-          "value": -6
+          "value": 1
         },
         {
           "childs": [],
           "label": "",
           "product": "Con desglose",
-          "value": -7
+          "value": 2
         }
       ],
       "label": "Con cuanto detalle desea imprimir la factura",
@@ -115,13 +115,13 @@
           "childs": [],
           "label": "",
           "product": "Limpiar carrito",
-          "value": -8
+          "value": 1
         },
         {
           "childs": [],
           "label": "",
           "product": "Eliminar un solo producto",
-          "value": -9
+          "value": 2
         }
       ],
       "label": "Cual opcion desea seleccionar",
@@ -134,19 +134,19 @@
           "childs": [],
           "label": "",
           "product": "Descuento de 10%",
-          "value": -10
+          "value": 1
         },
         {
           "childs": [],
           "label": "",
           "product": "Descuento de 25%",
-          "value": -11
+          "value": 2
         },
         {
           "childs": [],
           "label": "",
           "product": "Descuento de 50%",
-          "value": -12
+          "value": 3
         }
       ],
       "label": "Cual descuento desea aplicar",

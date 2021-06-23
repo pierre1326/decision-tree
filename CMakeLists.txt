@@ -21,6 +21,7 @@ add_executable(
   ./src/Cart/Cart.cpp
   ./src/GUI/GUI.cpp
   ./src/Bot/Bot.cpp
+  ./src/Queue/Queue.cpp
 )
 
 #external libs

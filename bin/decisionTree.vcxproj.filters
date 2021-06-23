@@ -22,6 +22,9 @@
     <ClCompile Include="C:\Users\pierr\Documents\GitHub\decision-tree\src\Bot\Bot.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\pierr\Documents\GitHub\decision-tree\src\Queue\Queue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\pierr\Documents\GitHub\decision-tree\CMakeLists.txt" />

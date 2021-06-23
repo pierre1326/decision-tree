@@ -3,7 +3,7 @@
 
 #include "Cart/Cart.h"
 #include "Tree/Tree.h"
-#include "List/List.h"
+#include "Queue/Queue.h"
 
 #include <iostream>
 #include <streambuf>
@@ -20,7 +20,7 @@ class Bot {
     void init();
 
   private:
-    List buffer;
+    Queue buffer;
     Tree tree;
     TreeNode * actualPosition;
     Cart cart;
@@ -28,6 +28,11 @@ class Bot {
 
     void executeOption(int option);
     void finalizeOption();
+    void addProduct();
+    void applyPromotion();
+    void printBill();
+    void deleteProduct();
+    void deleteOneProduct();
 
 };
 

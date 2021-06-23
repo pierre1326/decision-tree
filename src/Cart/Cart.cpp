@@ -2,8 +2,25 @@
 
 Cart::Cart() {}
 
+void Cart::setProducts(List products) {
+  this->products = products;
+}
+
+List Cart::getProducts() {
+  return this->products;
+}
+
+void Cart::setPromotion(int promotion) {
+  this->promotion = promotion;
+}
+
 void Cart::addProduct(string name, int value, int quantity) {
   this->products.add(name, value, quantity);
+}
+
+void Cart::deleteAll() {
+  List list;
+  this->products = list;
 }
 
 void Cart::deleteProduct(int index) {
@@ -15,7 +32,8 @@ void Cart::printTotal() {
   for(int i = 0; i < this->products.getSize(); i++) {
     total += this->products.getPrice(i) * this->products.getQuantity(i);
   }
-  cout << "El total de su factura es:" + to_string(total) << "\n";
+  float finalPrice = (float)total - ( (float)total * ( (float)this->promotion / 100 ) );
+  cout << "El total de su factura es: " + to_string(finalPrice) << "\n";
 }
 
 void Cart::printBill() {
@@ -31,7 +49,11 @@ void Cart::printBill() {
     result += product + "\n";
     total += this->products.getPrice(i) * this->products.getQuantity(i);
   }
-  result += "Total: " + to_string(total);
+  float finalPrice = (float)total - ( (float)total * ( (float)this->promotion / 100 ) );
+  result += "-----------------------------\n";
+  result += "Descuento: " + to_string(this->promotion) + "\n";
+  result += "Subtotal: " + to_string(total) + "\n";
+  result += "Total: " + to_string(finalPrice) + "\n";
   cout << result;
 }
 

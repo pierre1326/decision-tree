@@ -3,5 +3,7 @@
 Bot::Bot() {}
 
 void Bot::init() {
-  
+  while(true) {
+    
+  }
 }

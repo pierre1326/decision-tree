@@ -94,19 +94,21 @@ void Gui::initBot() {
 
 void Gui::addNode() {
   string product;
+  string pregunta;
   int price;
   int id;
   cout << "Indique el nombre del producto: ";
   cin >> product;
   cout << "\n" << "Indique el precio del producto: ";
   cin >> price;
-  string label = "Que tipo de " + product + " desea?";
+  cout << "\n" << "Indique la pregunta a mostrar al usuario: ";
+  cin >> pregunta;
   cout << "\n\n";
   this->tree.printTree();
   cout << "\n" << "Indique el ID del nodo donde desea colocar el producto (Asegurese que sea dentro del nodo para comidas, de no ser asi puede eliminarlo posteriormente): ";
   cin >> id;
-  if(price > 0 && product.size() > 0 && id > 0) {
-    bool result = this->tree.addNode(id, label, product, price);
+  if(price > 0 && product.size() > 0 && id > 0 && pregunta.size() > 0) {
+    bool result = this->tree.addNode(id, pregunta, product, price);
     if(result) {
       this->file.write(this->path, this->tree.convertTree());
       cout << "\n\n" << "El nodo se agrego con exito" << "\n";

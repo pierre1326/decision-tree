@@ -26,7 +26,91 @@
       "label": "",
       "product": "Agregar producto",
       "value": -3,
-      "childs": []
+      "childs": [
+        {
+          "label": "Que hamburguesa desea?",
+          "product": "Hamburguesa",
+          "value": 2000,
+          "childs": []
+        },
+        {
+          "label": "Que pizza desea?",
+          "product": "Pizza",
+          "value": 2000,
+          "childs": [
+            {
+              "label": "Que opcion desea?",
+              "product": "Vegetariana",
+              "value": 2000,
+              "childs": []
+            },
+            {
+              "label": "Que opcion desea?",
+              "product": "Suprema",
+              "value": 3000,
+              "childs": []
+            }
+          ]
+        },
+        {
+          "label": "Que tipo de pan desea?",
+          "product": "Sandwich",
+          "value": 2000,
+          "childs": [
+            {
+              "label": "Que opcion desea?",
+              "product": "Integral",
+              "value": 2000,
+              "childs": []
+            },
+            {
+              "label": "Que tipo de queso quiere colocar",
+              "product": "Especias",
+              "value": 2000,
+              "childs": [
+                {
+                  "label": "Que opcion desea?",
+                  "product": "Mozzarella",
+                  "value": 2000,
+                  "childs": []
+                },
+                {
+                  "label": "Indique la salsa que quiere",
+                  "product": "Americano",
+                  "value": 2000,
+                  "childs": [
+                    {
+                      "label": "Que opcion desea?",
+                      "product": "Mayonesa",
+                      "value": 2000,
+                      "childs": []
+                    },
+                    {
+                      "label": "Como quiere el pan?",
+                      "product": "Mostaza",
+                      "value": 2000,
+                      "childs": [
+                        {
+                          "label": "Que opcion desea?",
+                          "product": "Caliente",
+                          "value": 2000,
+                          "childs": []
+                        },
+                        {
+                          "label": "Que opcion desea?",
+                          "product": "Tostado",
+                          "value": 2000,
+                          "childs": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     { "label": "Cual opcion desea seleccionar",
       "product": "Eliminar producto de la factura",

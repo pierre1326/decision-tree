@@ -1,0 +1,10 @@
+^C:\USERS\PIERR\DOCUMENTS\GITHUB\DECISION-TREE\BIN\CMAKEFILES\2DFCA99C749E1B1633CDF819F214AD64\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/pierr/Documents/GitHub/decision-tree -BC:/Users/pierr/Documents/GitHub/decision-tree/bin --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/pierr/Documents/GitHub/decision-tree/bin/decision-tree.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

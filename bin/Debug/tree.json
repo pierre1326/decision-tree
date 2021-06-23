@@ -1,0 +1,75 @@
+{
+  "label": "Hola, espero se encuentre bien. Por favor indique la opcion que desea realizar.",
+  "product": "",
+  "value": -1,
+  "childs": [
+    {
+      "label": "Con cuanto detalle desea imprimir la factura",
+      "product": "Imprimir factura",
+      "value": -2,
+      "childs": [
+        {
+          "label": "",
+          "product": "Unicamente total",
+          "value": 0,
+          "childs": []
+        },
+        {
+          "label": "",
+          "product": "Con desglose",
+          "value": 0,
+          "childs": []
+        }
+      ]
+    },
+    {
+      "label": "",
+      "product": "Agregar producto",
+      "value": -3,
+      "childs": []
+    },
+    { "label": "Cual opcion desea seleccionar",
+      "product": "Eliminar producto de la factura",
+      "value": -4,
+      "childs": [
+        {
+          "label": "",
+          "product": "Limpiar carrito",
+          "value": 0,
+          "childs": []
+        },
+        {
+          "label": "",
+          "product": "Eliminar un solo producto",
+          "value": 0,
+          "childs": []
+        }
+      ]
+    },
+    {
+      "label": "Cual descuento desea aplicar",
+      "product": "Aplicar descuento",
+      "value": -5,
+      "childs": [
+        {
+          "label": "",
+          "product" : "Descuento de 10%",
+          "value": 0,
+          "childs": []
+        },
+        {
+          "label": "",
+          "product" : "Descuento de 25%",
+          "value": 0,
+          "childs": []
+        },
+        {
+          "label": "",
+          "product" : "Descuento de 50%",
+          "value": 0,
+          "childs": []
+        }
+      ]
+    }
+  ]
+}

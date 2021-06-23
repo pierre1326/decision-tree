@@ -73,6 +73,8 @@ void Bot::finalizeOption() {
       break;
   }
   cout << "Solicitud finalizada. El chatbot se reiniciara para realizar nuevas operaciones." << "\n\n";
+  Queue queue;
+  this->buffer = queue;
   this->actualPosition = this->tree.getRoot();
 }
 

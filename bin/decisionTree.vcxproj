@@ -318,7 +318,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\pierr\Documents\GitHub\decision-tree\src\List\List.cpp" />
     <ClCompile Include="C:\Users\pierr\Documents\GitHub\decision-tree\src\Tree\Tree.cpp" />
     <ClCompile Include="C:\Users\pierr\Documents\GitHub\decision-tree\src\Cart\Cart.cpp" />
-    <ClCompile Include="C:\Users\pierr\Documents\GitHub\decision-tree\src\Bot\Bot.cpp" />
+    <ClCompile Include="C:\Users\pierr\Documents\GitHub\decision-tree\src\GUI\GUI.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\pierr\Documents\GitHub\decision-tree\bin\ZERO_CHECK.vcxproj">

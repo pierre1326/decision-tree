@@ -19,7 +19,7 @@ add_executable(
   ./src/List/List.cpp
   ./src/Tree/Tree.cpp
   ./src/Cart/Cart.cpp
-  ./src/Bot/Bot.cpp
+  ./src/GUI/GUI.cpp
 )
 
 #external libs

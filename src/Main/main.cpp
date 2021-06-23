@@ -3,12 +3,12 @@
 #include <fstream>
 #include <string>
 
-#include "Bot/Bot.h"
+#include "GUI/GUI.h"
 
 using namespace std;
 
 int main() {	
-	Bot bot("tree.json");
-	bot.initBot();
+	Gui gui("tree.json");
+	gui.init();
 	return 0;
 }

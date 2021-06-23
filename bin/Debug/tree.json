@@ -11,13 +11,13 @@
         {
           "label": "",
           "product": "Unicamente total",
-          "value": 0,
+          "value": -6,
           "childs": []
         },
         {
           "label": "",
           "product": "Con desglose",
-          "value": 0,
+          "value": -7,
           "childs": []
         }
       ]
@@ -35,13 +35,13 @@
         {
           "label": "",
           "product": "Limpiar carrito",
-          "value": 0,
+          "value": -8,
           "childs": []
         },
         {
           "label": "",
           "product": "Eliminar un solo producto",
-          "value": 0,
+          "value": -9,
           "childs": []
         }
       ]
@@ -54,19 +54,19 @@
         {
           "label": "",
           "product" : "Descuento de 10%",
-          "value": 0,
+          "value": -10,
           "childs": []
         },
         {
           "label": "",
           "product" : "Descuento de 25%",
-          "value": 0,
+          "value": -11,
           "childs": []
         },
         {
           "label": "",
           "product" : "Descuento de 50%",
-          "value": 0,
+          "value": -12,
           "childs": []
         }
       ]

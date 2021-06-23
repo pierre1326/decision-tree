@@ -172,13 +172,13 @@ bool Tree::deleteNodeAux(int id, TreeNode * root) {
       }
       temp = temp->next;
     }
-    if(child->id == id) {
+    if(child->id == id && child->value >= 0) {
       root->child = child->next;
       return true;
     }
     else {
        while(child->next != NULL) {
-         if(child->next->id == id) {
+         if(child->next->id == id && child->next->value >= 0) {
            child->next = child->next->next;
            return true;
          }

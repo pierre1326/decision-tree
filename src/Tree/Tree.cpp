@@ -2,6 +2,35 @@
 
 Tree::Tree() {}
 
+void Tree::printWidthTree() {
+  int height = this->maxHeight();
+  vector<string> data(height, "");
+  data = this->printWidthTreeAux(this->root, 0, data);
+  int i = 1;
+  for(auto text: data) {
+    cout << "Nivel: " + to_string(i) + " " << text << "\n";
+    i++;
+  }
+}
+
+vector<string> Tree::printWidthTreeAux(TreeNode * root, int level, vector<string> data) {
+  int i = 0;
+  for (auto infoLevel : data) {
+    if(i == level) {
+      infoLevel += " - Nodo: " + to_string(root->id);
+      data[i] = infoLevel;
+      break;
+    }
+    i++;
+  }
+  TreeNode * child = root->child;
+  while(child != NULL) {
+    data = printWidthTreeAux(child, level + 1, data);
+    child = child->next;
+  }
+  return data;
+}
+
 TreeNode * Tree::getRoot() {
   return root;
 }

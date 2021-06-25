@@ -32,14 +32,14 @@
             {
               "childs": [],
               "label": "Que opcion desea?",
-              "product": "Vegetariana",
-              "value": 2000
+              "product": "Suprema",
+              "value": 3000
             },
             {
               "childs": [],
-              "label": "Que opcion desea?",
-              "product": "Suprema",
-              "value": 3000
+              "label": "Que-extra-desea",
+              "product": "Vegetariana",
+              "value": 2500
             }
           ],
           "label": "Que pizza desea?",
@@ -103,6 +103,12 @@
           "label": "Que tipo de pan desea?",
           "product": "Sandwich",
           "value": 2000
+        },
+        {
+          "childs": [],
+          "label": "Que-tipo-de-ensalada-desea",
+          "product": "Ensalada",
+          "value": 1000
         }
       ],
       "label": "Cual producto desea agregar?",
@@ -130,18 +136,6 @@
     },
     {
       "childs": [
-        {
-          "childs": [],
-          "label": "",
-          "product": "Descuento de 10%",
-          "value": 1
-        },
-        {
-          "childs": [],
-          "label": "",
-          "product": "Descuento de 25%",
-          "value": 2
-        },
         {
           "childs": [],
           "label": "",

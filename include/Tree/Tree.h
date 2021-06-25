@@ -7,6 +7,7 @@
 #include <streambuf>
 #include <fstream>
 #include <string>
+#include <vector>
 
 using json = nlohmann::json;
 using namespace std;
@@ -140,6 +141,11 @@ class Tree {
      **/
     TreeNode * getRoot();
 
+    /**
+     * Imprime el arbol en anchura
+     **/
+    void printWidthTree();
+
   private:
     //Raiz del arbol
     TreeNode *root;
@@ -196,6 +202,7 @@ class Tree {
     void preorderTransversalAux(TreeNode * root);
     void orderTransversalAux(TreeNode * root);
     string printTreeAux(TreeNode * root, int spaces);
+    vector<string> printWidthTreeAux(TreeNode * root, int level, vector<string> data );
 
 };
 

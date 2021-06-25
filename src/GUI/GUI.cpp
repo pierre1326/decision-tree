@@ -26,11 +26,12 @@ void Gui::init() {
     cout << "9. Imprimir la informacion completa del arbol en orden" << "\n";
     cout << "10. Imprimir la informacion del archivo completa de forma secuencial" << "\n";
     cout << "11. Imprimir la informacion completa del arbol por cada flujo de informacion  " << "\n";
-    cout << "12. Salir del sistema  " << "\n\n";
+    cout << "12. Imprimir arbol en altura  " << "\n";
+    cout << "13. Salir del sistema  " << "\n\n";
     cout << "Ingrese el numero de la opcion que desea realizar: ";
     cin >> option;
     cout << "\n";
-    if(option == 12) {
+    if(option == 13) {
       cout << "Saliendo del sistema" << "\n";
       break;
     }
@@ -82,6 +83,9 @@ void Gui::executeOption(int option) {
       this->tree.printTree();
       cout << "\n";
       break;
+    case 12:
+      this->tree.printWidthTree();
+      cout << "\n";
     default:
       cout << "La opcion indicada no esta disponible, por favor intentelo nuevamente" << "\n\n";
       break;

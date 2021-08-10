@@ -9,19 +9,13 @@ project( decision-tree )
 #files
 
 #include
-include_directories( ./include ./src ./lib/nlohmann/include )
+include_directories( ./include ./src ./lib/rapidjson/include )
 
 #target
 add_executable( 
   decisionTree 
   ./src/Main/main.cpp
-  ./src/File/File.cpp
-  ./src/List/List.cpp
-  ./src/Tree/Tree.cpp
-  ./src/Cart/Cart.cpp
-  ./src/GUI/GUI.cpp
-  ./src/Bot/Bot.cpp
-  ./src/Queue/Queue.cpp
+  ./src/Parser/ParserModbus.cpp
 )
 
 #external libs

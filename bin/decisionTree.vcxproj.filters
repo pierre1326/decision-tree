@@ -4,25 +4,7 @@
     <ClCompile Include="C:\Users\pierr\Documents\GitHub\decision-tree\src\Main\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\pierr\Documents\GitHub\decision-tree\src\File\File.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\pierr\Documents\GitHub\decision-tree\src\List\List.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\pierr\Documents\GitHub\decision-tree\src\Tree\Tree.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\pierr\Documents\GitHub\decision-tree\src\Cart\Cart.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\pierr\Documents\GitHub\decision-tree\src\GUI\GUI.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\pierr\Documents\GitHub\decision-tree\src\Bot\Bot.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\pierr\Documents\GitHub\decision-tree\src\Queue\Queue.cpp">
+    <ClCompile Include="C:\Users\pierr\Documents\GitHub\decision-tree\src\Parser\ParserModbus.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

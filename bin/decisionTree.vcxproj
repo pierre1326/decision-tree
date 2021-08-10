@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\pierr\Documents\GitHub\decision-tree\.\include;C:\Users\pierr\Documents\GitHub\decision-tree\.\src;C:\Users\pierr\Documents\GitHub\decision-tree\.\lib\nlohmann\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\pierr\Documents\GitHub\decision-tree\.\include;C:\Users\pierr\Documents\GitHub\decision-tree\.\src;C:\Users\pierr\Documents\GitHub\decision-tree\.\lib\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -103,10 +103,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\pierr\Documents\GitHub\decision-tree\.\include;C:\Users\pierr\Documents\GitHub\decision-tree\.\src;C:\Users\pierr\Documents\GitHub\decision-tree\.\lib\nlohmann\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\pierr\Documents\GitHub\decision-tree\.\include;C:\Users\pierr\Documents\GitHub\decision-tree\.\src;C:\Users\pierr\Documents\GitHub\decision-tree\.\lib\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\pierr\Documents\GitHub\decision-tree\.\include;C:\Users\pierr\Documents\GitHub\decision-tree\.\src;C:\Users\pierr\Documents\GitHub\decision-tree\.\lib\nlohmann\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\pierr\Documents\GitHub\decision-tree\.\include;C:\Users\pierr\Documents\GitHub\decision-tree\.\src;C:\Users\pierr\Documents\GitHub\decision-tree\.\lib\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -129,7 +129,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\pierr\Documents\GitHub\decision-tree\.\include;C:\Users\pierr\Documents\GitHub\decision-tree\.\src;C:\Users\pierr\Documents\GitHub\decision-tree\.\lib\nlohmann\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\pierr\Documents\GitHub\decision-tree\.\include;C:\Users\pierr\Documents\GitHub\decision-tree\.\src;C:\Users\pierr\Documents\GitHub\decision-tree\.\lib\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -146,10 +146,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\pierr\Documents\GitHub\decision-tree\.\include;C:\Users\pierr\Documents\GitHub\decision-tree\.\src;C:\Users\pierr\Documents\GitHub\decision-tree\.\lib\nlohmann\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\pierr\Documents\GitHub\decision-tree\.\include;C:\Users\pierr\Documents\GitHub\decision-tree\.\src;C:\Users\pierr\Documents\GitHub\decision-tree\.\lib\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\pierr\Documents\GitHub\decision-tree\.\include;C:\Users\pierr\Documents\GitHub\decision-tree\.\src;C:\Users\pierr\Documents\GitHub\decision-tree\.\lib\nlohmann\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\pierr\Documents\GitHub\decision-tree\.\include;C:\Users\pierr\Documents\GitHub\decision-tree\.\src;C:\Users\pierr\Documents\GitHub\decision-tree\.\lib\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -172,7 +172,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\pierr\Documents\GitHub\decision-tree\.\include;C:\Users\pierr\Documents\GitHub\decision-tree\.\src;C:\Users\pierr\Documents\GitHub\decision-tree\.\lib\nlohmann\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\pierr\Documents\GitHub\decision-tree\.\include;C:\Users\pierr\Documents\GitHub\decision-tree\.\src;C:\Users\pierr\Documents\GitHub\decision-tree\.\lib\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -189,10 +189,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\pierr\Documents\GitHub\decision-tree\.\include;C:\Users\pierr\Documents\GitHub\decision-tree\.\src;C:\Users\pierr\Documents\GitHub\decision-tree\.\lib\nlohmann\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\pierr\Documents\GitHub\decision-tree\.\include;C:\Users\pierr\Documents\GitHub\decision-tree\.\src;C:\Users\pierr\Documents\GitHub\decision-tree\.\lib\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\pierr\Documents\GitHub\decision-tree\.\include;C:\Users\pierr\Documents\GitHub\decision-tree\.\src;C:\Users\pierr\Documents\GitHub\decision-tree\.\lib\nlohmann\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\pierr\Documents\GitHub\decision-tree\.\include;C:\Users\pierr\Documents\GitHub\decision-tree\.\src;C:\Users\pierr\Documents\GitHub\decision-tree\.\lib\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -215,7 +215,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\pierr\Documents\GitHub\decision-tree\.\include;C:\Users\pierr\Documents\GitHub\decision-tree\.\src;C:\Users\pierr\Documents\GitHub\decision-tree\.\lib\nlohmann\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\pierr\Documents\GitHub\decision-tree\.\include;C:\Users\pierr\Documents\GitHub\decision-tree\.\src;C:\Users\pierr\Documents\GitHub\decision-tree\.\lib\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -231,10 +231,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\pierr\Documents\GitHub\decision-tree\.\include;C:\Users\pierr\Documents\GitHub\decision-tree\.\src;C:\Users\pierr\Documents\GitHub\decision-tree\.\lib\nlohmann\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\pierr\Documents\GitHub\decision-tree\.\include;C:\Users\pierr\Documents\GitHub\decision-tree\.\src;C:\Users\pierr\Documents\GitHub\decision-tree\.\lib\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\pierr\Documents\GitHub\decision-tree\.\include;C:\Users\pierr\Documents\GitHub\decision-tree\.\src;C:\Users\pierr\Documents\GitHub\decision-tree\.\lib\nlohmann\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\pierr\Documents\GitHub\decision-tree\.\include;C:\Users\pierr\Documents\GitHub\decision-tree\.\src;C:\Users\pierr\Documents\GitHub\decision-tree\.\lib\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -314,13 +314,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\Users\pierr\Documents\GitHub\decision-tree\src\Main\main.cpp" />
-    <ClCompile Include="C:\Users\pierr\Documents\GitHub\decision-tree\src\File\File.cpp" />
-    <ClCompile Include="C:\Users\pierr\Documents\GitHub\decision-tree\src\List\List.cpp" />
-    <ClCompile Include="C:\Users\pierr\Documents\GitHub\decision-tree\src\Tree\Tree.cpp" />
-    <ClCompile Include="C:\Users\pierr\Documents\GitHub\decision-tree\src\Cart\Cart.cpp" />
-    <ClCompile Include="C:\Users\pierr\Documents\GitHub\decision-tree\src\GUI\GUI.cpp" />
-    <ClCompile Include="C:\Users\pierr\Documents\GitHub\decision-tree\src\Bot\Bot.cpp" />
-    <ClCompile Include="C:\Users\pierr\Documents\GitHub\decision-tree\src\Queue\Queue.cpp" />
+    <ClCompile Include="C:\Users\pierr\Documents\GitHub\decision-tree\src\Parser\ParserModbus.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\pierr\Documents\GitHub\decision-tree\bin\ZERO_CHECK.vcxproj">

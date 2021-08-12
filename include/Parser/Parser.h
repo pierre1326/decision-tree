@@ -5,13 +5,15 @@
 #include <string>
 #include <sstream>
 
+#include "Information.h"
+
 using namespace std;
 
 class Parser {
 
   public:
     virtual char * createFrame(string id, string address, string registers) { return 0; }
-    virtual void readFrame(char * buffer) {}
+    virtual Information * readFrame(char * buffer, bool isSigned) { return nullptr; }
 
 };
 

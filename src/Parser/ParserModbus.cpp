@@ -1,36 +1,52 @@
 #include "ParserModbus.h"
 
-void ParserModbus::readFrame(char * buffer) {
+Information * ParserModbus::readFrame(char * buffer, bool isSigned) {
   char function = buffer[1];
   if(function == 0x03 || function == 0x04) {
-    //TO DO
+    return readData(buffer, isSigned);
   }
   else {
-    readError(buffer);
+    return readError(buffer);
   }
 }
 
-void ParserModbus::readError(char * buffer) {
-  char id = buffer[0];
-  char function = buffer[1];
-  char exception = buffer[2];
-  string crc = hexToString(buffer[3]) + hexToString(buffer[4]);
-  string crcVerification = calculateCRC(buffer, 3);
-  cout << crc << endl;
-  cout << crcVerification << endl;
-  if(crc == crcVerification) {
-    cout << "Valor valido" << endl;
-    //LOG DE ERROR
+Information * ParserModbus::readData(char * buffer, bool isSigned) {
+  int id = (int)buffer[0];
+  int function = (int)buffer[1];
+  int count = (int)buffer[2];
+  string value = "";
+  for(int i = 0; i < count; i++) {
+    char data = buffer[3 + i];
+    value = value + hexToString(data);
   }
-  else {
-    //LOG DE CORRUPCION DE DATOS
+  int transform = stoi(value, 0, 16);
+  if(isSigned) {
+    transform = this->processValue(value);
   }
+  Information * information = new Information(transform, id, function);
+  return information;
+}
+
+Information * ParserModbus::readError(char * buffer) {
+  int id = (int)buffer[0];
+  int function = (int)buffer[1];
+  int exception = (int)buffer[2];
+  Information * information = new Information("Error in frame modbus from device", "Device read error", id, function, exception);
+  return information;
+}
+
+int ParserModbus::processValue(string value) {
+  return stoi(value);
 }
 
 string ParserModbus::hexToString(char value) {
-  ostringstream os;
-  os << hex << value;
-  string result = os.str();
+  int temp = (int)value;
+  stringstream streamHex;
+  streamHex << hex << temp;
+  string result(streamHex.str());
+  if(result.length() < 2) {
+    result = "0" + result;
+  }
   return result;
 }
 
